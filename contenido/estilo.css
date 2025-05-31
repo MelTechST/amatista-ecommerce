@@ -1,0 +1,411 @@
+body{
+    font-family: "Quicksand";
+}
+
+.form-head{
+    display: flex;
+    background-color: white;
+    color: rgb(31, 29, 29);
+    padding: 1.5rem;
+    margin: 0;
+    text-align:start;
+    height: 4.5rem;
+    flex-direction: row;
+}
+
+header h1{
+    font-family: 'Dancing Script';
+    font-size: 3em;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+    text-align: start;
+}
+
+header p {
+    font-family: 'Quicksand';
+    font-size: 1em;
+    padding: 0;
+    margin-top: 3rem; 
+    margin-left: 2rem;
+    text-align:center ;
+}
+
+/* NAV */
+nav{
+    width: 95.9vw;
+    background: rgb(108, 43, 146);
+    padding: 1rem;
+    margin: 0;
+}
+
+.nav-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.boton1,
+.btn-producto,
+.btn-reseña,
+.btn-inicio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    background-color: rgb(108, 43, 146);
+    border: none;
+    border-radius: 5px;
+    padding: 0.6rem 1rem;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.btn-subs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    background-color: rgb(197, 41, 41);
+    border: none;
+    border-radius: 5px;
+    padding: 0.6rem 1rem;
+    cursor: pointer;
+    font-family: "Quicksand";
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    margin-right: 1.5rem;
+}
+
+.btn-subs:hover{
+    background-color: rgb(204, 76, 72);
+}
+
+.boton1 svg,
+.btn-producto svg,
+.btn-reseña svg,
+.btn-inicio svg,
+.btn-subs svg {
+    pointer-events: none; /* Para que no interfieran con el clic */
+}
+
+.btn-inicio:hover,
+.btn-subs:hover,
+.boton1:hover,
+.btn-producto:hover,
+.btn-reseña:hover{
+    transform: scale(1.2);
+}
+
+/* MAIN Y SECTION */
+main{
+    padding: 1rem;
+    min-height: 90vh;
+    margin-bottom: 50px;
+}
+
+main h2{
+    font-size: 2em;
+    text-align: center;
+}
+
+main h3{
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #222;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+.grid-producto {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 2rem;
+}
+
+/* tarjetas */
+.card-producto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20rem;
+    background: white;
+    padding: 16px;
+    margin: 0 2rem 0 8rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* titulo de cada producto */
+.card-producto .title {
+    font-family: "Quicksand";
+    font-size: 1.1rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    margin-left: 5px;
+    text-align: center;
+    color: #222;
+}
+
+/* imagen */
+.card-producto .img{
+    width: 100%;
+    border-radius: 0.5rem;
+    margin-bottom: 10px;
+}
+
+.card-producto .btn-comprar{
+    padding: 10px 20px; 
+    background-color:  #6c2b92;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Quicksand";
+    transition: all 0.3s ease;
+    margin-top: 1.5rem;
+}       
+
+.card-producto .btn-comprar:hover{
+    background-color: #844ba5;
+    transform: scale(1.2);
+}
+
+
+/* RESEÑAS */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /*dividir 3 columnas en una fraccion*/
+    gap: 2rem;
+    padding: 2rem; /*cajitas separadas*/
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.grid-item {
+    background-color: whitesmoke;
+    color: #222;
+    padding: 5rem 2rem;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 0.75rem;
+    border: 1em solid;
+    border-color: rgb(123, 79, 182);
+    transition: transform 0.3s ease;
+}
+
+.grid-item:hover {
+    transform: scale(1.1);
+}
+
+
+section{
+    padding: 2em 0;
+}
+
+section h2{
+    font-family: "Quicksand";
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2em;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 2em 1.5em;
+    border-radius: 12px;
+    border-style: solid;
+    border: 3px solid  rgb(108, 43, 146);
+}
+
+form p{
+    display: flex;
+    justify-content: center;
+    font-size: 1.1em;
+    margin: 8px 4px 0 4px;
+}
+
+form input{
+    padding:1em;
+    border: 1px solid rgb(137, 100, 148);
+    border-radius: 6px;
+    font-size: 1em;
+    margin: 1em 0;
+    font-family: inherit;
+    resize: vertical;
+}
+
+form textarea{
+    padding:1em;
+    border: 1px solid rgb(137, 100, 148);
+    border-radius: 6px;
+    font-size: 1em;
+    margin: 1em 0;
+    font-family: inherit;
+    resize: vertical;
+}
+
+form button{
+    background: rgb(218, 47, 47);
+    color: white;
+    border: none;
+    margin-top: 1em;
+    padding: 0.8em;
+    border-radius: 7px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+form button:hover{
+    background-color: rgb(212, 75, 71);
+    transform: scale(1.05);
+}
+
+/* FOOTER */
+footer{
+    background: #222;
+    height: 10rem;
+}
+
+.layout-container{
+    display: grid;
+    grid-template-areas: 
+        "text-title text-copy";
+    grid-template-columns: repeat(2 1fr);
+    grid-template-rows: auto 1fr auto;
+}
+
+.text-title{
+    font-family: "Dancing Script";
+    font-size: 3em;
+    font-weight: bold;
+    padding: 2rem;
+    margin: 0px 10px 0px 0px;
+    color:white;
+}
+
+.text-copy{
+    grid-area: text-copy;
+    font-family: "Quicksand";
+    font-weight: 3em;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    margin: 35px 270px 35px  0px;
+    text-align: center;
+}
+
+.fixed-box{
+    display: flex;
+    .wsp{
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        padding: 10px;
+        background: none;
+        border: none;
+    }
+}
+
+/* MEDIA QUERY para celulares */
+@media (max-width: 768px) {
+
+  .form-head {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    padding: 1rem;
+  }
+
+  header h1 {
+    font-size: 2em;
+  }
+
+  header p {
+    font-size: 0.95em;
+    margin: 0.5rem 0 0 0;
+    text-align: start;
+  }
+
+  .nav-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .boton1,
+  .btn-producto,
+  .btn-reseña,
+  .btn-inicio,
+  .btn-subs {
+    width: 90%;
+    justify-content: center;
+    font-size: 1rem;
+  }
+
+  .grid-producto {
+    grid-template-columns: 1fr;
+    padding: 0 1rem;
+  }
+
+  .card-producto {
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+
+  .grid-item {
+    padding: 2rem 1rem;
+    font-size: 1rem;
+  }
+
+  form {
+    padding: 1.5rem 1rem;
+    width: 95%;
+  }
+
+  .text-title {
+    font-size: 2rem;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .text-copy {
+    margin: 0;
+    font-size: 0.9rem;
+    padding: 1rem;
+  }
+
+  .layout-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .fixed-box .wsp {
+    right: 10px;
+    bottom: 10px;
+  }
+}

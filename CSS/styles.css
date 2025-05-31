@@ -1,0 +1,192 @@
+.texto-header{
+    display: flex;
+    background-color: white;
+    color: rgb(31, 29, 29);
+    padding: 1.5rem;
+    margin: 0;
+    text-align:start;
+    height: 4.5rem;
+    flex-direction: row;
+}
+
+header h1{
+    font-family: 'Dancing Script';
+    font-size: 3em;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+    text-align: start;
+}
+
+header p {
+    font-family: 'Quicksand';
+    font-size: 1em;
+    padding: 0;
+    margin-top: 3rem;
+    margin-left: 2rem;
+    text-align:center ;
+}
+
+
+nav{
+    width: 95.9vw;
+    background: rgb(108, 43, 146);
+    padding: 1rem;
+    margin: 0;
+}
+
+.nav-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.boton1,
+.btn-producto,
+.btn-reseña,
+.btn-inicio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    background-color: rgb(108, 43, 146);
+    border: none;
+    border-radius: 5px;
+    padding: 0.6rem 1rem;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.btn-subs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    background-color: rgb(197, 41, 41);
+    border: none;
+    border-radius: 5px;
+    padding: 0.6rem 1rem;
+    cursor: pointer;
+    font-family: "Quicksand";
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    margin-right: 1.5rem;
+}
+
+.btn-subs:hover{
+    background-color: rgb(204, 76, 72);
+}
+
+.boton1 svg,
+.btn-producto svg,
+.btn-reseña svg,
+.btn-inicio svg,
+.btn-subs svg {
+    pointer-events: none; /* Para que no interfieran con el clic */
+}
+
+.btn-inicio:hover,
+.btn-subs:hover,
+.boton1:hover,
+.btn-producto:hover,
+.btn-reseña:hover{
+    transform: scale(1.2);
+}
+
+section{
+    background: url(../img/modelo.jpg);
+    /* background-position: top; */
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    width: 98.2vw;
+}
+
+section h2 {
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 5px rgb(46, 9, 58);
+    font-family: "Quicksand";
+    font-size: 2rem;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 20px;
+}
+
+/* MAIN */
+main{
+    padding: 2.5rem 1.5rem;
+    max-width: 1200px;
+    margin: 5rem 2rem;
+    background-image: linear-gradient(to right bottom, #810bc0, #9240c8, #a362d0, #b381d6, #c29fdc);
+}
+
+main h2{
+    font-family: "Quicksand";
+    color: white;
+    text-align: center;
+}
+
+main p{
+    font-family: "Quicksand";
+    color: white;
+    text-align: center;
+}
+
+/* FOOTER */
+footer{
+    background: #222;
+    height: 10rem;
+}
+
+.layout-container{
+    display: grid;
+    grid-template-areas:
+        "text-title text-copy";
+    grid-template-columns: repeat(2 1fr);
+    grid-template-rows: auto 1fr auto;
+}
+
+.text-title{
+    font-family: "Dancing Script";
+    font-size: 3em;
+    font-weight: bold;
+    padding: 2rem;
+    margin: 0px 10px 0px 0px;
+    color:white;
+    background: #222;
+}
+
+.text-copy{
+    grid-area: text-copy;
+    font-family: "Quicksand";
+    font-weight: 3em;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    margin: 35px 270px 35px  0px;
+    text-align: center;
+}
+
+.fixed-box{
+    display: flex;
+    .wsp{
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        padding: 10px;
+        background: none;
+        border: none;
+    }
+}
+
