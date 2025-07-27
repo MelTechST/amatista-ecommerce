@@ -25,7 +25,7 @@ El sitio incluye:
 ## 📁 Estructura de carpetas
 
 ```
-/AMATISTA
+/amatista-ecommerce
 │
 ├── index.html               # Página principal
 ├── contenido/
