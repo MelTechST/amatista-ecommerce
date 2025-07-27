@@ -32,7 +32,7 @@ El sitio incluye:
 │   ├── producto.html        # Catálogo de productos
 │   ├── reseña.html          # Sección de reseñas
 │   ├── formulario.html      # Formulario de contacto
-│   └── css_contenido
+│   └── css_contenido/
 │       └── estilo.css       # Estilos de contenidos
 │
 ├── CSS/
