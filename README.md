@@ -31,12 +31,11 @@ El sitio incluye:
 ├── contenido/
 │   ├── producto.html        # Catálogo de productos
 │   ├── reseña.html          # Sección de reseñas
-│   ├── formulario.html      # Formulario de contacto
-│   └── css_contenido/
-│       └── estilo.css       # Estilos de contenidos
+│   └── formulario.html      # Formulario de contacto
 │
 ├── CSS/
-│   └── styles.css           # Estilos principales
+│   ├── styles.css           # Estilos principales
+│   └── estilo.css       # Estilos de contenidos
 │
 ├── img/                     # Imágenes de productos y fondo
 ├── js/
