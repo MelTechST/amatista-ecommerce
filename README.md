@@ -33,9 +33,9 @@ El sitio incluye:
 │   ├── reseña.html          # Sección de reseñas
 │   └── formulario.html      # Formulario de contacto
 │
-├── CSS/
+├── css/
 │   ├── styles.css           # Estilos principales
-│   └── estilo.css       # Estilos de contenidos
+│   └── estilo.css           # Estilos de contenidos
 │
 ├── img/                     # Imágenes de productos y fondo
 ├── js/
