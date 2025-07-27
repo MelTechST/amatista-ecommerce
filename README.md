@@ -10,7 +10,7 @@ Bienvenid@ a **AMATISTA**, una tienda digital enfocada en la venta de insumos de
 
 ## 🌐 Descripción
 
-**AMATISTA** es un sitio de e-commerce diseñado con HTML y CSS, pensado para ser visualmente atractivo, funcional y adaptable a dispositivos móviles. Forma parte del curso Front-End JS de Talento Tech (comisión 25016).
+**AMATISTA** es un sitio de e-commerce diseñado con HTML, CSS y JavaScript, pensado para ser visualmente atractivo, funcional y adaptable a dispositivos móviles. Forma parte del curso Front-End JS de Talento Tech (comisión 25016).
 
 El sitio incluye:
 
@@ -31,12 +31,18 @@ El sitio incluye:
 ├── contenido/
 │   ├── producto.html        # Catálogo de productos
 │   ├── reseña.html          # Sección de reseñas
-│   └── formulario.html      # Formulario de contacto
+│   ├── formulario.html      # Formulario de contacto
+│   └── css_contenido
+│       └── estilo.css       # Estilos de contenidos
 │
 ├── CSS/
 │   └── styles.css           # Estilos principales
 │
 ├── img/                     # Imágenes de productos y fondo
+├── js/
+│    └── script.js           # Funcionalidad e interactividad
+│
+├──makeup_icon.ico           # Icono de la página web
 ```
 
 ---
@@ -45,8 +51,11 @@ El sitio incluye:
 
 - HTML5
 - CSS3
+- JavaScript
 - Google Fonts (`Quicksand` y `Dancing Script`)
 - Responsive Design (Media Queries)
+- Formspree
+- Color Space
 - SVG Icons
 
 ---
@@ -59,7 +68,8 @@ El sitio está optimizado para:
 - 💻 Escritorios
 - 📲 Tablets
 
-Gracias al uso de `@media (max-width: 768px)` para adaptar el contenido en pantallas pequeñas.
+Gracias al uso de `@media (max-width: 768px)` para adaptar el contenido en pantallas para tablets y `@media screen and (max-width: 480px)` para celulares.
+
 
 ---
 
@@ -74,7 +84,7 @@ Gracias al uso de `@media (max-width: 768px)` para adaptar el contenido en panta
 
 ## 📌 Créditos
 
-Proyecto desarrollado por **MeliTech** como parte de una tienda digital personal.
+Proyecto desarrollado por **MeliTech** como parte de una tienda digital de un conocido.
 
 <!-- 
 ---
