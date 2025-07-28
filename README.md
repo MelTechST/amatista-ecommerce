@@ -33,7 +33,7 @@ El sitio incluye:
 │   ├── reseña.html          # Sección de reseñas
 │   └── formulario.html      # Formulario de contacto
 │
-├── css/
+├── CSS/
 │   ├── styles.css           # Estilos principales
 │   └── estilo.css           # Estilos de contenidos
 │
