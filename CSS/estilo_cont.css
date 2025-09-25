@@ -9,7 +9,7 @@ body {
     line-height: 1.6;
 }
 
-/* HEADER */
+/* --- HEADER ---- */
 .form-head {
     display: flex;
     background-color: white;
@@ -43,7 +43,7 @@ header p {
     align-self: flex-end;
 }
 
-/* NAVIGATION */
+/*--- NAVIGATION--- */
 nav {
     width: 100%;
     background: rgb(108, 43, 146);
@@ -125,7 +125,7 @@ section{
     padding-bottom: 0;
 }
 
-/* SECTION */
+/* --- SECTION--- */
 .secontenido{
     position: relative;
     text-align: center;
@@ -149,7 +149,7 @@ section h2 {
     max-width: 90%;
 }
 
-/* CONTENEDORES MAIN Y ASIDE */
+/* ---CONTENEDORES MAIN Y ASIDE--- */
 .contenedor_main_aside{
     display: flex;
     flex-wrap: nowrap;
@@ -173,7 +173,7 @@ section h2 {
     min-width: 0;
 }
 
-/* MAIN */
+/* ---MAIN--- */
 main #productos{ 
     /* prueba #producto */
     padding: 1rem;
@@ -203,7 +203,7 @@ main h3 {
     padding-left: 1rem;
 }
 
-/* tarjetas */
+/* ---- TARJETAS(CARDS)--- */
 
 .card-producto {
     display: flex;
@@ -220,7 +220,7 @@ main h3 {
     overflow: hidden;
 }
 
-/* titulo de cada producto */
+/* TITULO de cada producto */
 .card-producto .title {
     font-family: "Quicksand";
     font-size: 1.1rem;
@@ -262,7 +262,7 @@ main h3 {
     transform: scale(1.2);
 }
 
-/* ASIDE */
+/* --- ASIDE --- */
 
 .conteinerBarLat{
     position: relative;
@@ -326,7 +326,7 @@ main h3 {
 }
 
 
-/* RESEÑAS */
+/* --------- RESEÑAS ---------- */
 
 .resmain{
     padding: 1rem 0;
@@ -359,7 +359,7 @@ main h3 {
     transform: scale(1.05);
 }
 
-/* FORMULARIO */
+/* ---------- FORMULARIO ------------- */
 section {
     padding: 2em 0;
 }
@@ -438,7 +438,7 @@ form button:hover {
     transform: scale(1.05);
 }
 
-/* FOOTER */
+/* --- FOOTER--- */
 footer {
     background: #222;
     min-height: 10rem;
@@ -500,9 +500,9 @@ footer {
     RESPONSIVE DESIGN
    =============================== */
 
-/* Tablets (768px y menos) */
+/* ---- TABLETS (768px y menos) ---- */
 @media screen and (max-width: 768px) {
-    /* --Header-- */
+    /* --HEADER-- */
     .form-head {
         padding: 1rem;
         height: auto;
@@ -520,7 +520,7 @@ footer {
         margin-top: 0.5rem;
     }
     
-    /* --Nav-- */
+    /* --NAVIGATION-- */
     nav {
         padding: 0.5rem;
     }

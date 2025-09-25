@@ -13,7 +13,8 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // Función para agregar productos
+    // FUNCIÓN
+    // PARA AGREGAR LOS PRODUCTOS AL CARRITO
     window.agregarAlCarrito = function (nombre, precio) {
         const index = carrito.findIndex(p => p.nombre === nombre);
         if (index !== -1) {
@@ -24,7 +25,8 @@ document.addEventListener("DOMContentLoaded", () => {
         actualizarCarrito();
     }
 
-    // Función para actualizar el HTML del carrito
+    // FUNCIÓN
+    // PARA ACTUALIZAR EL ESTADO (HTML) DEL CARRITO
     function actualizarCarrito() {
         listaCarrito.innerHTML = "";
         let totalGeneral = 0;
@@ -47,7 +49,8 @@ document.addEventListener("DOMContentLoaded", () => {
         localStorage.setItem("carrito", JSON.stringify(carrito));
     }
 
-    // Cambiar cantidad
+    // FUNCIÓN
+    // PARA CAMBIAR LA CANTIDAD DE LOS PRODUCTOS AGREGADOS AL CARRITO
     window.cambiarCantidad = function (index, cambio) {
         carrito[index].cantidad += cambio;
         if (carrito[index].cantidad <= 0) {
@@ -56,7 +59,7 @@ document.addEventListener("DOMContentLoaded", () => {
         actualizarCarrito();
     }
 
-    // ELIMINAR UN PRODUCTO (DE ANERA >INDIVIDUAL<)
+    // ELIMINAR UN PRODUCTO (DE MANERA >INDIVIDUAL<)
     window.eliminarProducto = function (index) {
         carrito.splice(index, 1);
         actualizarCarrito();
@@ -67,7 +70,8 @@ document.addEventListener("DOMContentLoaded", () => {
     contenedorBotones.classList.add("botones-carrito");
     asideCarrito.querySelector(".conteinerBarLat").appendChild(contenedorBotones);
 
-    // VACIAR EL CARRITO
+    // BOTÓN
+    // PARA VACIAR EL CARRITO
     const btnVaciar = document.createElement("button");
     btnVaciar.innerHTML= `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 32 32" style="vertical-align:middle; margin-right:6px">
     <path fill="#ffffff" d="M26 20h-6v-2h6zm4 8h-6v-2h6zm-2-4h-6v-2h6z"/>
@@ -86,7 +90,9 @@ document.addEventListener("DOMContentLoaded", () => {
     });
     contenedorBotones.appendChild(btnVaciar);
 
-    //Prueba para que aparezca el cartelito si el usuario clickea fnalizar (prueba y error)
+    // PRUEBA
+    // PARA QUE APAREZCA EL CARTELITO 
+    // SI EL USUARIO CLICLKEA FINALIZAR (prueba y error)
     function mostrarMensaje(texto) {
         const mensaje=document.createElement("div");
         mensaje.textContent= texto;
@@ -115,7 +121,8 @@ document.addEventListener("DOMContentLoaded", () => {
         }, 2000);
     }
 
-    // Finalizar la compra del carrito
+    // BOTÓN
+    // PARA FINALIZAR LA COMPRA
     const btnFinalizar = document.createElement("button");
     btnFinalizar.textContent = "Finalizar compra";
     btnFinalizar.style.backgroundColor = "rgba(221, 53, 47, 1)";
@@ -154,7 +161,7 @@ document.addEventListener("DOMContentLoaded", () => {
             errores.push("El nombre es obligatorio.");
         }
 
-        // Validación de correo usando expresión regular más completa
+        // (Validación de correo usando expresión regular más completa)
         const regexCorreo = /^[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/;
         if (!regexCorreo.test(correo.value.trim())) {
             errores.push("El correo no es válido.");
@@ -165,7 +172,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         if (errores.length > 0) {
-            e.preventDefault(); // Evita que se envíe el formulario
+            e.preventDefault(); // Evita que se envíe el formulario si los campos están vacios!
             error.innerHTML = errores.join("<br>");
         } else {
             error.innerHTML = "";

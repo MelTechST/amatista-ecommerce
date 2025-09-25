@@ -241,12 +241,12 @@ footer {
 }
 
 /* ===============================
-    RESPONSIVE DESIGN
+    ----- RESPONSIVE DESIGN -----
    =============================== */
 
-/* Tablets (768px y menos) */
+/* --- Tablets (768px y menos) --- */
 @media screen and (max-width: 768px) {
-    /*Header */
+    /* HEADER */
     .texto-header {
         padding: 1rem;
         height: auto;
@@ -264,7 +264,7 @@ footer {
         margin-top: 0.5rem;
     }
     
-    /*Navigation*/
+    /* NAVIGATION */
     nav {
         padding: 0.5rem;
     }
@@ -278,7 +278,7 @@ footer {
         margin-right: 0;
     }
     
-    /*Section */
+    /* SECTION*/
     section {
         padding: 2rem 1rem;
         min-height: 250px;
@@ -289,7 +289,7 @@ footer {
         padding: 15px;
     }
     
-    /* Main*/
+    /* MAIN */
     main {
         padding: 4rem 2rem;
         margin: 3rem auto;
@@ -300,7 +300,7 @@ footer {
         font-size: 0.95rem;
     }
     
-    /* Footer */
+    /* FOOTER */
     .layout-container {
         grid-template-areas: 
             "text-title"
@@ -319,7 +319,7 @@ footer {
         padding: 1rem;
     }
     
-    /* WhatsApp button */
+    /* BOTÓN WSP*/
     .wsp {
         bottom: 15px;
         right: 15px;
@@ -331,9 +331,9 @@ footer {
     }
 }
 
-/* Móviles (480px y menos) */
+/* --- MOBILE (480px y menos) --- */
 @media screen and (max-width: 480px) {
-    /* Header */
+    /* HEADER */
     .texto-header {
         padding: 0.8rem;
     }
@@ -346,7 +346,7 @@ footer {
         font-size: 0.9rem;
     }
     
-    /* Navigation */
+    /* NAVIGATION */
     .nav-container {
         gap: 0.3rem;
         flex-wrap: wrap;
@@ -367,7 +367,7 @@ footer {
         font-size: 0.8rem;
     }
     
-    /* Hero Section */
+    /* SECTION */
     section {
         padding: 1.5rem 0.5rem;
         min-height: 200px;
@@ -378,7 +378,7 @@ footer {
         padding: 12px;
     }
     
-    /* Main */
+    /* MAIN */
     main {
         padding: 1.5rem 1rem;
         width: 98%;
@@ -388,7 +388,7 @@ footer {
         font-size: 0.9rem;
     }
     
-    /* Footer */
+    /* FOOTER */
     .text-title {
         font-size: 2rem;
         padding: 1rem;
@@ -399,7 +399,7 @@ footer {
         padding: 0.5rem;
     }
     
-    /* WhatsApp button */
+    /* BOTÓN WSP*/
     .wsp {
         bottom: 10px;
         right: 10px;
@@ -411,7 +411,7 @@ footer {
     }
 }
 
-/* Móviles pequeños (320px y menos) */
+/* --- MOBILE PEQUES (320px y menos) --- */
 @media screen and (max-width: 320px) {
     header h1 {
         font-size: 1.8rem;
