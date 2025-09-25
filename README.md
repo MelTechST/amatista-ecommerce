@@ -16,7 +16,7 @@ El sitio incluye:
 
 - Página de inicio con presentación de la tienda
 - Catálogo de productos en grilla
-- Sección de reseñas de clientas
+- Sección de reseñas de clientes
 - Formulario de contacto
 - Navegación moderna y responsiva
 
@@ -83,7 +83,7 @@ Gracias al uso de `@media (max-width: 768px)` para adaptar el contenido en panta
 
 ## 📌 Créditos
 
-Proyecto desarrollado por **MeliTech** como parte de una tienda digital de un conocido.
+Proyecto desarrollado por **MeliTech** como parte de una tienda digital ficticia.
 
 <!-- 
 ---
@@ -96,4 +96,4 @@ Agregaré capturas a futuro asi se visualiza mejor en Github
 
 ## 📬 Contacto
 
-Podés comunicarte a través del formulario de contacto (el botón de WhatsApp sin función por el momento).
+Podés comunicarte a través del formulario de contacto o por whatsapp.
